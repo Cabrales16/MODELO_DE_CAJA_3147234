@@ -1,0 +1,57 @@
+/*
+    Box model
+    - Solo funciona en elementos
+    display block
+
+    - Div la tiene por defecto
+
+    - Comportamiento por defecto:
+        - ocupa todo el ancho de la pantalla
+        - altura depende del contenido
+        
+    - Funciona si:
+        - los elementos tienen contenido
+        - o tienen un tamaño definido
+*/
+.box{
+    /* border-top: 2px dashed darkblue;
+    border-right: 10px dotted honeydew;
+    border-bottom: 20px dashed rebeccapurple;
+    border-left: 10px groove mediumslateblue;
+
+    border-color: aquamarine ;
+    border-style: solid;
+    border-width: 5px;
+     */
+    border-top-color: beige;
+    border-top-style: dashed;
+    border-top-width: 10px;
+    
+    border-left-color: rgb(158, 15, 163);
+    border-left-style: dotted;
+    border-left-width: 15px;
+
+    border-right-color: rgb(188, 188, 28);
+    border-right-style: groove;
+    border-right-width: 25px;
+
+    border-bottom-color: rgb(25, 213, 135);
+    border-bottom-style: solid;
+    border-bottom-width: 19px;
+
+}
+
+
+.box1 {
+    background-color: steelblue;
+    display: block;
+    height: 100px;
+    padding: 50px 20px 10px 25px;
+}
+
+.box2 {
+    background-color: salmon;
+    display: block;
+    height: 200px;
+    padding: 2px 4px 6px 8px;
+}
