@@ -8,10 +8,17 @@
     - Comportamiento por defecto:
         - ocupa todo el ancho de la pantalla
         - altura depende del contenido
-        
+
     - Funciona si:
         - los elementos tienen contenido
         - o tienen un tamaño definido
+
+
+        Margin:
+        - determina el espacio entre los elementos
+        - solo aplica a elementos display
+        - computado de margenes
+        - colapso de margenes
 */
 .box{
     /* border-top: 2px dashed darkblue;
@@ -23,35 +30,96 @@
     border-style: solid;
     border-width: 5px;
      */
-    border-top-color: beige;
-    border-top-style: dashed;
-    border-top-width: 10px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width:15px;
     
-    border-left-color: rgb(158, 15, 163);
-    border-left-style: dotted;
-    border-left-width: 15px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: solid;
+    border-left-width:15px;
 
-    border-right-color: rgb(188, 188, 28);
-    border-right-style: groove;
-    border-right-width: 25px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: solid;
+    border-right-width:15px;
 
-    border-bottom-color: rgb(25, 213, 135);
+    border-bottom-color: rgb(0, 0, 0);
     border-bottom-style: solid;
-    border-bottom-width: 19px;
+    border-bottom-width:15px;
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .box1 {
-    background-color: steelblue;
+    /* margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 50px; */
+    margin: 30px 40px 60px 100px; /*Va en el sentido de las manecillas del reloj arriba, derecha, abajo, izquierda*/
+    background-color:burlywood;
     display: block;
-    height: 100px;
     padding: 50px 20px 10px 25px;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 240px;
+    border-top-right-radius: 240px;
 }
 
 .box2 {
+    margin: 10px 70px; /*Va en sentido de pares: 10px = arriba y abajo, 70px = izquierda y derecha*/
     background-color: salmon;
     display: block;
-    height: 200px;
-    padding: 2px 4px 6px 8px;
+    height: 400px;
+    width: 400px;
+    padding: 175px 4px 6px 8px;
+    opacity: 0.5;
+    margin-top: 100px; /*Toma en cuenta el valor de margin mayor (Computo de margenes)*/
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.ojo1 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin: 0 0 0 30px;
+    border-radius: 50%;
+}
+
+.ojo2 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+.pupila {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 15px 0 0 20px;
+}
+
+.boca {
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    margin: 10px 0 0 65px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
 }
